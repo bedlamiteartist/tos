@@ -1,0 +1,34 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Test message",
+            "title": "Hey"
+        },
+        "category": "myCategory"
+    },
+    
+    "WatchKit Simulator Actions": [
+        {
+            "title": "Start Tutorial",
+            "identifier": "firstButtonAction"
+        }
+    ],
+    "myData":{
+        "_id" : 1,
+        "title" : "shower head replacement",
+        "department" : "home",
+        "steps" :
+        [
+         {"step 1" : "Protect the floor with a towel or sheet", "url 1" : "ex"},
+         {"step 2" : "Unscrew the old shower head", "url 2": "ex"},
+         {"step 3" : "Remove old plumber’s tape and clean threads", "url 3": "ex"},
+         {"step 4" : "Wrap threads with new plumber’s tape", "url 4": "ex"},
+         {"step 5" : "Screw on the new shower head", "url 5": "ex"},
+         {"step 6" : "Turn on the water to test the flow for leaks", "url 6": "ex"}
+         ],
+        
+    },
+    
+    
+    "customKey": "Use this file to define a testing payload for your notifications. The aps dictionary specifies the category, alert text and title. The WatchKit Simulator Actions array can provide info for one or more action buttons in addition to the standard Dismiss button. Any other top level keys are custom payload. If you have multiple such JSON files in your project, you'll be able to select them when choosing to debug the notification interface of your Watch App."
+}

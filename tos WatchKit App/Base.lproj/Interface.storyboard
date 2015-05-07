@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wCs-gf-oqX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="rJB-WW-Pwk">
+            <objects>
+                <controller animationDuration="1" id="wCs-gf-oqX">
+                    <items>
+                        <imageView width="136" height="139" alignment="center" image="frame-" contentMode="scaleAspectFit" animationDuration="9.5" id="hXw-xi-zah"/>
+                    </items>
+                    <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="317" y="595"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="H6b-AQ-37E">
+            <objects>
+                <controller id="xc5-or-irs">
+                    <items>
+                        <group width="1" alignment="left" animationDuration="1" layout="vertical" id="7BO-qJ-gV2">
+                            <items>
+                                <label width="136" height="19" alignment="center" text="Step 1" textAlignment="center" numberOfLines="0" id="HfS-0J-kBK" colorLabel="IBBuiltInLabel-Green">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                                <group alignment="center" id="6aw-e5-2uh">
+                                    <items>
+                                        <label width="1" alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="ucO-7z-sgD"/>
+                                    </items>
+                                    <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.90196078431372551" green="0.047058823529411764" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <button width="1" height="35" alignment="left" title="Next Step" id="CYE-NB-qmK">
+                            <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="486" y="592"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController contentMode="scaleAspectFit" id="YCC-NB-fut">
+                    <items>
+                        <label height="30" alignment="left" text="Alert Label" numberOfLines="0" id="XkS-y5-khE">
+                            <accessibilityTraits key="accessibilityTraits" none="YES" button="YES" playsSound="YES" staticText="YES"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf">
+                        <color key="sashColor" red="1" green="0.0" blue="0.046319447734534336" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="0.15711086044266187" green="0.15711086044266187" blue="0.15711086044266187" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="YoH-rD-C0t" kind="relationship" relationship="dynamicNotificationInterface" id="aoj-xn-S0t"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="317" y="1016"/>
+        </scene>
+        <!--Dynamic Notification Interface Controller-->
+        <scene sceneID="4nv-qc-z1j">
+            <objects>
+                <controller id="YoH-rD-C0t">
+                    <items>
+                        <label width="133" height="56" alignment="left" text="This is not a thing" numberOfLines="0" id="nt9-4q-JTX"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="569" y="948"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.66255987138427863" green="1" blue="0.67227190092509836" alpha="1" colorSpace="calibratedRGB"/>
+</document>
